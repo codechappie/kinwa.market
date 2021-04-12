@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+body{
+    font-size: 15px;
+    background: #edf2f6;
+}
+
+
+
+
+
+/*container*/
+.container-page{
+    width: 95%;
+    margin: 20px auto;
+    margin-top: 15px;
+}
