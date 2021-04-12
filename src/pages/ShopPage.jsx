@@ -9,7 +9,9 @@ import Hero from "../components/hero/Hero";
 // import Carousel from "../components/carousel/Carousel";
 const ShopPage = () => {
   // const { products, categories } = useSelector((state) => state.user);
-  const { products, categories, messages } = useSelector((state) => state.user);
+  const { company, products, categories, messages } = useSelector(
+    (state) => state.user
+  );
   const dispatch = useDispatch();
   const myExcelId = "1GZinXdk1sS1ss8wWuThlevk6Qgl1Tt0UGf9_PjDcwN0";
 
@@ -17,11 +19,15 @@ const ShopPage = () => {
     dispatch(tableTopData(myExcelId));
   }, [dispatch]);
 
-  // console.log(messages)
+  console.log(company[0]?.frase);
 
   return !messages.loadingPage ? (
     <div className="shop-page">
-      <Hero />
+      <Hero
+        frase={company[0]?.frase}
+        hashtag={company[0]?.hashtag}
+        fondo={company[0]?.fondo}
+      />
       <div className="categories">
         <Carousel categories={categories} />
         <div className="container-page">
