@@ -19,7 +19,7 @@ const ShopPage = () => {
     dispatch(tableTopData(myExcelId));
   }, [dispatch]);
 
-  console.log(company[0]?.frase);
+  // console.log(company[0]?.frase);
 
   return !messages.loadingPage ? (
     <div className="shop-page">
