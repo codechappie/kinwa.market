@@ -61,8 +61,8 @@ const Carousel = ({ categories }) => {
     >
       <Slider>
         {categories.map((category, index) => (
-          <Slide key={index} index={index}>
-            <Link to={`/categoria/${category.categoria}`}>
+          <Slide key={index} index={index} aria-label={category.categoria}>
+            <Link to={`/categoria/${category.categoria}`} aria-label={category.categoria}>
               <div className="icon">
                 <img src={category.icono} alt={category.categoria} />
               </div>

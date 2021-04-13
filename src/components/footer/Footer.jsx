@@ -17,17 +17,28 @@ const Footer = () => {
         </div>
         <div className="social-networking-sites">
           {company[0]?.facebook && (
-            <a href={company[0]?.facebook} target="_blank" rel="noreferrer">
+            <a
+              aria-label="facebook"
+              href={company[0]?.facebook}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={facebookIcon} alt="" />
             </a>
           )}
           {company[0]?.instagram && (
-            <a href={company[0]?.instagram} target="_blank" rel="noreferrer">
+            <a
+              aria-label="instagram"
+              href={company[0]?.instagram}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={instagramIcon} alt="" />
             </a>
           )}
           {company[0]?.correo && (
             <a
+              aria-label="correo"
               href={`mailto:${company[0]?.correo}`}
               target="_blank"
               rel="noreferrer"

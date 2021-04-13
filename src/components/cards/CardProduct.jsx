@@ -86,7 +86,7 @@ const CardProduct = ({ product }) => {
           <div className="buying-buttons">
             <div className="buttons">
               <button
-                className="decrease button"
+                className="decrease button" aria-label="decrementar"
                 onClick={(e) => handleQuitProduct(e, medida)}
               >
                 -
@@ -104,7 +104,7 @@ const CardProduct = ({ product }) => {
                 )}
               </div>
               <button
-                className="increase button"
+                className="increase button" aria-label="incrementar"
                 onClick={(e) => stock === 'SI' && handleAddProduct(e, medida)}
               >
                 +
@@ -112,7 +112,7 @@ const CardProduct = ({ product }) => {
             </div>
 
             <button
-              className="add-product-btn"
+              className="add-product-btn" aria-label="agregar producto"
               onClick={(e) =>
                 handleAddToCart(e, id, nombre, precio, imagen, medida)
               }
