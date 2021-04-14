@@ -11,8 +11,8 @@ const ShopCategoryPage = () => {
   const { category } = useParams();
   const dispatch = useDispatch();
   const myExcelId = "1GZinXdk1sS1ss8wWuThlevk6Qgl1Tt0UGf9_PjDcwN0";
-  console.log(category)
-  console.log(categoryProducts)
+  // console.log(category)
+  // console.log(categoryProducts)
   useEffect(() => {
     dispatch(tableTopDataByCategory(myExcelId, category));
     return () => {
