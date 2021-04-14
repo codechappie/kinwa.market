@@ -89,7 +89,7 @@ export const userReducer = (state = initialState, action) => {
   }
   if (types.getCategoryData === action.type) {
     const { products, company, category, categories } = action.payload;
-    // console.log(products, category);
+    console.log(products, category);
     const categoryProducts = products.filter(
       (product) => product.categoria === category
     );

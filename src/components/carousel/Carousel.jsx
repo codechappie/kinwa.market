@@ -15,7 +15,7 @@ import lessIcon from "../../assets/icons/less-than.svg";
 const Carousel = ({ categories }) => {
   const { width } = useWindowDimensions();
   let numberVisibleSlides;
-  console.log(width);
+  // console.log(width);
   if (width <= 5000) {
     numberVisibleSlides = 5;
   }
