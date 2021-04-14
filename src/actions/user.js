@@ -24,7 +24,7 @@ export const tableTopData = (myExcelId) => {
 
 export const tableTopDataByCategory = (myExcelId, category) => {
   return (dispatch) => {
-    dispatch(getCategoryData([], [], [], category));
+    // dispatch(getCategoryData([], [], [], category));
     Tabletop.init({
       key: myExcelId,
       simpleSheet: false,

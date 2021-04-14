@@ -100,7 +100,7 @@ export const userReducer = (state = initialState, action) => {
     }
     if (categoryProducts.length > 0) {
       empty = false;
-    } else if (categoryProducts.length < 0) {
+    } else if (categoryProducts.length < 1) {
       empty = true;
     }
     console.log({ categoryProducts });
