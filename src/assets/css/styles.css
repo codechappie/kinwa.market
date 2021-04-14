@@ -151,7 +151,7 @@
   margin: 0 5px;
   border-radius: 10px;
   overflow: hidden;
-  gap: 10px;
+  /* gap: 10px; */
 }
 .shop-page .carousel .carousel__back-button{
   background: #00000013;
