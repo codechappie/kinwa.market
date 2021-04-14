@@ -427,6 +427,7 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical; */
   overflow: hidden;
+  text-align: center;
   height: auto;
 }
 .shop-page .cards .card .buying-buttons {
