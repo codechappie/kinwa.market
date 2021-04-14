@@ -25,7 +25,7 @@ const CardProduct = ({ product }) => {
     }
     if (medida === "gramos") {
       if (gramsValue === 0) return;
-      setGramsValue(gramsValue - 100);
+      setGramsValue(gramsValue - 1000);
     }
   };
 
@@ -35,7 +35,7 @@ const CardProduct = ({ product }) => {
       setUnitValue(unitValue + 1);
     }
     if (medida === "gramos") {
-      setGramsValue(gramsValue + 100);
+      setGramsValue(gramsValue + 1000);
     }
   };
 
