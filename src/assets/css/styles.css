@@ -412,6 +412,11 @@
   text-align: center;
   width: 100%;
 }
+.shop-page .cards .card .title::first-letter,
+.shop-page .cards .card .description::first-letter {
+  text-transform: capitalize;
+}
+
 .shop-page .cards .card .price{
   font-size: 1.1em;
 }
@@ -422,7 +427,6 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-transform: capitalize;
 }
 .shop-page .cards .card .buying-buttons {
   /* margin-top: 14px; */
