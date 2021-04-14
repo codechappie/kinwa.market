@@ -15,7 +15,7 @@ const ShoppingCartItem = ({ id, nombre, precio, imagen, cantidad, medida }) => {
     }
     if (medida === "gramos") {
       // if (gramsValue === 0) return;
-      value = cantidad - 100;
+      value = cantidad - 1000;
     }
     console.log({value})
     const productDto = {
@@ -37,8 +37,8 @@ const ShoppingCartItem = ({ id, nombre, precio, imagen, cantidad, medida }) => {
       value = cantidad + 1;
     }
     if (medida === "gramos") {
-      // setGramsValue(gramsValue + 100);
-      value = cantidad + 100;
+      // setGramsValue(gramsValue + 1000);
+      value = cantidad + 1000;
     }
     console.log({value})
     const productDto = {
