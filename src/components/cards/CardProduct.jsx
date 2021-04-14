@@ -14,8 +14,8 @@ const CardProduct = ({ product }) => {
   const [gramsValue, setGramsValue] = useState(0);
   const [modalAdded, setModalAdded] = useState(false);
 
-  const stockUpper = stock.toUpperCase();
-
+  let stockUpper = stock.toUpperCase();
+  console.log(stockUpper)
   const handleQuitProduct = (e, medida) => {
     e.preventDefault();
     if (medida === "unidad") {
