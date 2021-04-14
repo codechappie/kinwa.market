@@ -414,7 +414,7 @@
 }
 .shop-page .cards .card .title::first-letter,
 .shop-page .cards .card .description::first-letter {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .shop-page .cards .card .price{
