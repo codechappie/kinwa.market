@@ -68,7 +68,7 @@ const CardProduct = ({ product }) => {
           <ModalAdded setModal={setModalAdded} />
         </Modal>
         {
-          stock.toUpperCase() !== 'SI' && (
+          stock !== 'SI' && (
             <div className="unavailable">
               <span>Sin stock 😞</span>
             </div>
