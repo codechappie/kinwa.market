@@ -19,6 +19,7 @@ const ShopCategoryPage = () => {
     }    
   }, [dispatch, category]);
 
+
   return !messages.loadingCategoryPage ? (
     <div className="shop-page">
       <div className="categories">

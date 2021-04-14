@@ -56,7 +56,7 @@ export const userReducer = (state = initialState, action) => {
     let existingIncrementProduct = state.cart.filter(
       (item) => item.id === incrementProduct.id
     );
-    console.log("cart", state.cart);
+    // console.log("cart", state.cart);
     if (incrementProduct.cantidad === 0) {
       const withOutProduct = state.cart.filter(
         (item) => item.id !== incrementProduct.id
@@ -89,9 +89,9 @@ export const userReducer = (state = initialState, action) => {
   }
   if (types.getCategoryData === action.type) {
     const { products, company, category, categories } = action.payload;
-    console.log(products, category);
+    // console.log(products, category);
     const categoryProducts = products.filter(
-      (product) => product.categoria === category
+      (product) => product.categoria === category.trim()
     );
     let empty = true;
     let loadingCategoryPage = true;
@@ -100,7 +100,7 @@ export const userReducer = (state = initialState, action) => {
     }
     if (categoryProducts.length > 0) {
       empty = false;
-    } else if (categoryProducts.length < 0) {
+    } else if (categoryProducts.length < 1) {
       empty = true;
     }
     // console.log({ categoryProducts });

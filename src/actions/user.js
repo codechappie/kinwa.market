@@ -8,7 +8,7 @@ export const tableTopData = (myExcelId) => {
       simpleSheet: false,
     })
       .then((data) => {
-        console.log(data)
+        // console.log(data)
         dispatch(
           getUserData(
             data.productos.elements,

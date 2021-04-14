@@ -547,7 +547,7 @@
 .modal-content {
   /* position: absolute; */
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   position: fixed;
   z-index: 10;
   /* top: 50%;
