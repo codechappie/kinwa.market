@@ -1037,7 +1037,7 @@
     width: 94%;
   }
   .shop-page .cards .card {
-    grid-template-rows: 200px 140px;
+    grid-template-rows: 200px auto;
   }
   .shop-page .cards .card .buttons .value .values{
     font-size: 1.2em;
