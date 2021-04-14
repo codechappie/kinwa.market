@@ -81,7 +81,7 @@ const CardProduct = ({ product }) => {
           <div className="product-info">
             <div className="title">{nombre}</div>
             <div className="description">{descripcion}</div>
-            <small className="price">S/. {numberWithCommas(precio)}</small>
+            <small className="price">$ {numberWithCommas(precio)}</small>
           </div>
           <div className="buying-buttons">
             <div className="buttons">

@@ -17,10 +17,10 @@ const ShoppingCart = ({ seModalIsOpen }) => {
     cart.map((product) => {
       message += `%0a%0a*☑️ Producto:* ${product.nombre}%0a    » *Preciox${
         product.medida === "unidad" ? "Unidad" : "Kilo"
-      }:* S/. ${numberWithCommas(product.precio)}%0a    » *Cantidad:* ${
+      }:* $ ${numberWithCommas(product.precio)}%0a    » *Cantidad:* ${
         product.medida === "unidad" ? product.cantidad : product.cantidad / 1000
       }${product.medida === "unidad" ? "" : "kg"}
-      %0a    » *Subtotal:* S/. ${
+      %0a    » *Subtotal:* $ ${
         product.medida === "unidad"
           ? numberWithCommas((product.precio * product.cantidad).toFixed(2))
           : numberWithCommas(
@@ -47,7 +47,7 @@ const ShoppingCart = ({ seModalIsOpen }) => {
     window.open(
       `https://wa.me/${
         company[0]?.whatsapp
-      }?text=${message}%0a%0a%0a*💰 El monto final a pagar es de:*%0a »» S/. ${numberWithCommas(
+      }?text=${message}%0a%0a%0a*💰 El monto final a pagar es de:*%0a »» $ ${numberWithCommas(
         finalPayment.toFixed(2)
       )}${finalMessage}`,
       "_blank"

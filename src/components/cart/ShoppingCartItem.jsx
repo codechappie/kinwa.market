@@ -61,10 +61,10 @@ const ShoppingCartItem = ({ id, nombre, precio, imagen, cantidad, medida }) => {
         <div className="product-info">
           <div className="title">{nombre}</div>
           <div className="prices">
-            <div className="unit-price">unidad: S/. {numberWithCommas(precio)}</div>
+            <div className="unit-price">unidad: $ {numberWithCommas(precio)}</div>
             {/* <span>➝</span> */}
             <div className="subtotal">
-              subtotal: S/.
+              subtotal: $
               {medida === "unidad"
                 ? `${numberWithCommas((precio * cantidad).toFixed(2))}`
                 : `${numberWithCommas(((precio * cantidad) / 1000).toFixed(2))}`}
