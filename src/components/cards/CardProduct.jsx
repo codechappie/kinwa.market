@@ -14,6 +14,8 @@ const CardProduct = ({ product }) => {
   const [gramsValue, setGramsValue] = useState(0);
   const [modalAdded, setModalAdded] = useState(false);
 
+  const stockUpper = stock.toUpperCase();
+
   const handleQuitProduct = (e, medida) => {
     e.preventDefault();
     if (medida === "unidad") {
@@ -68,7 +70,7 @@ const CardProduct = ({ product }) => {
           <ModalAdded setModal={setModalAdded} />
         </Modal>
         {
-          stock !== 'SI' && (
+          stockUpper !== 'SI' && (
             <div className="unavailable">
               <span>Sin stock 😞</span>
             </div>
