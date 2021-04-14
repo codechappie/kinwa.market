@@ -107,7 +107,7 @@ const CardProduct = ({ product }) => {
               </div>
               <button
                 className="increase button" aria-label="incrementar"
-                onClick={(e) => stock === 'SI' && handleAddProduct(e, medida)}
+                onClick={(e) => stockUpper === 'SI' && handleAddProduct(e, medida)}
               >
                 +
               </button>
