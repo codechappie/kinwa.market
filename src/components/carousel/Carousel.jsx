@@ -1,26 +1,3 @@
-// import React from "react";
-// import { Swiper, SwiperSlide } from "framework7-react";
-// import "swiper/swiper.min.css";
-// import { Link } from "react-router-dom";
-
-// const Carousel = ({ categories }) => {
-//   return (
-//     <Swiper navigation loop={true} slidesPerView={6} spaceBetween={20}>
-//       {categories.map((category, index) => (
-//         <SwiperSlide key={index} className="category-card">
-//           <Link to={`/tienda/${category.categoria}`} >
-//             <div className="icon">
-//               <img src={category.icono} alt={category.categoria} />
-//             </div>
-//             <h3>{category.categoria}</h3>
-//           </Link>
-//         </SwiperSlide>
-//       ))}
-//     </Swiper>
-//   );
-// };
-
-// export default Carousel;
 import React from "react";
 import {
   CarouselProvider,
@@ -62,7 +39,7 @@ const Carousel = ({ categories }) => {
       <Slider>
         {categories.map((category, index) => (
           <Slide key={index} index={index} aria-label={category.categoria}>
-            <Link to={`/categoria/${category.categoria}`} aria-label={category.categoria}>
+            <Link to={`/categoria/${category.etiqueta}`} aria-label={category.categoria}>
               <div className="icon">
                 <img src={category.icono} alt={category.categoria} />
               </div>
