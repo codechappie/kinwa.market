@@ -262,6 +262,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-transform: capitalize;
 }
 .shop-page .categories a img{
   width: 100%;
