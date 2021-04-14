@@ -68,7 +68,7 @@ const CardProduct = ({ product }) => {
           <ModalAdded setModal={setModalAdded} />
         </Modal>
         {
-          stock !== 'SI' && (
+          stock !== 'SI' || stock === 'si' && (
             <div className="unavailable">
               <span>Sin stock 😞</span>
             </div>
