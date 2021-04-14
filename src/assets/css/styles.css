@@ -151,7 +151,10 @@
   margin: 0 5px;
   border-radius: 10px;
   overflow: hidden;
-  /* gap: 10px; */
+  /* gap: 10px;
+  
+  
+  */
 }
 .shop-page .carousel .carousel__back-button{
   background: #00000013;
@@ -405,16 +408,13 @@
 .shop-page .cards .card .title {
   font-size: 1.4em;
   font-weight: 500;
-  display: -webkit-box;
+  /* display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  overflow: hidden; */
   text-align: center;
   width: 100%;
-}
-.shop-page .cards .card .title::first-letter,
-.shop-page .cards .card .description::first-letter {
-  text-transform: uppercase;
+  height: auto;
 }
 
 .shop-page .cards .card .price{
@@ -423,10 +423,11 @@
 .shop-page .cards .card .description {
   font-size: 1em;
   font-weight: 300;
-  display: -webkit-box;
+  /* display: -webkit-box;
   -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: vertical; */
   overflow: hidden;
+  height: auto;
 }
 .shop-page .cards .card .buying-buttons {
   /* margin-top: 14px; */
